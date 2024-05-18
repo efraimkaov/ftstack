@@ -24,7 +24,7 @@ class LayoutBuilderExample extends StatelessWidget {
         child: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints constraints) {
             double whiteHeight = constraints.maxHeight / 18;
-            double blackHeight = whiteHeight / 1.5;
+            double blackHeight = whiteHeight / 1.25;
             if (constraints.maxWidth > constraints.maxHeight) {
               return Center(
                 child: Row(
@@ -48,20 +48,27 @@ class LayoutBuilderExample extends StatelessWidget {
                 children: [
                   Positioned(
                     top: whiteHeight * 0,
-                    left: 0,
-                    width: constraints.maxWidth / 7 * 1,
-                    height: constraints.maxHeight,
-                    child: Container(
-                      color: Colors.blueGrey.shade700,
-                    ),
-                  ),
-                  Positioned(
-                    top: whiteHeight * 0,
                     left: constraints.maxWidth / 7,
                     width: constraints.maxWidth / 7 * 6,
                     height: whiteHeight,
                     child: Container(
-                      color: Colors.grey.shade700,
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade100,
+                        border: Border(
+                          top: BorderSide(
+                            color: Colors.black,
+                            width: whiteHeight / 50,
+                          ),
+                          right: BorderSide(
+                            color: Colors.black,
+                            width: constraints.maxWidth / 100,
+                          ),
+                          bottom: BorderSide(
+                            color: Colors.black,
+                            width: whiteHeight / 50,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                   Positioned(
@@ -70,7 +77,23 @@ class LayoutBuilderExample extends StatelessWidget {
                     width: constraints.maxWidth / 7 * 6,
                     height: whiteHeight,
                     child: Container(
-                      color: Colors.grey.shade700,
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade100,
+                        border: Border(
+                          top: BorderSide(
+                            color: Colors.black,
+                            width: whiteHeight / 50,
+                          ),
+                          right: BorderSide(
+                            color: Colors.black,
+                            width: constraints.maxWidth / 100,
+                          ),
+                          bottom: BorderSide(
+                            color: Colors.black,
+                            width: whiteHeight / 50,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                   Positioned(
@@ -79,7 +102,23 @@ class LayoutBuilderExample extends StatelessWidget {
                     width: constraints.maxWidth / 7 * 6,
                     height: whiteHeight,
                     child: Container(
-                      color: Colors.grey.shade700,
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade100,
+                        border: Border(
+                          top: BorderSide(
+                            color: Colors.black,
+                            width: whiteHeight / 50,
+                          ),
+                          right: BorderSide(
+                            color: Colors.black,
+                            width: constraints.maxWidth / 100,
+                          ),
+                          bottom: BorderSide(
+                            color: Colors.black,
+                            width: whiteHeight / 50,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                   Positioned(
@@ -88,7 +127,23 @@ class LayoutBuilderExample extends StatelessWidget {
                     width: constraints.maxWidth / 7 * 6,
                     height: whiteHeight,
                     child: Container(
-                      color: Colors.grey.shade700,
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade100,
+                        border: Border(
+                          top: BorderSide(
+                            color: Colors.black,
+                            width: whiteHeight / 50,
+                          ),
+                          right: BorderSide(
+                            color: Colors.black,
+                            width: constraints.maxWidth / 100,
+                          ),
+                          bottom: BorderSide(
+                            color: Colors.black,
+                            width: whiteHeight / 50,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                   Positioned(
@@ -97,7 +152,23 @@ class LayoutBuilderExample extends StatelessWidget {
                     width: constraints.maxWidth / 7 * 3,
                     height: blackHeight,
                     child: Container(
-                      color: Colors.grey.shade800,
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade800,
+                        border: Border(
+                          top: BorderSide(
+                            color: Colors.black,
+                            width: whiteHeight / 25,
+                          ),
+                          right: BorderSide(
+                            color: Colors.black,
+                            width: constraints.maxWidth / 100,
+                          ),
+                          bottom: BorderSide(
+                            color: Colors.black,
+                            width: whiteHeight / 25,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                   Positioned(
@@ -106,7 +177,40 @@ class LayoutBuilderExample extends StatelessWidget {
                     width: constraints.maxWidth / 7 * 3,
                     height: blackHeight,
                     child: Container(
-                      color: Colors.grey.shade800,
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade800,
+                        border: Border(
+                          top: BorderSide(
+                            color: Colors.black,
+                            width: whiteHeight / 25,
+                          ),
+                          right: BorderSide(
+                            color: Colors.black,
+                            width: constraints.maxWidth / 100,
+                          ),
+                          bottom: BorderSide(
+                            color: Colors.black,
+                            width: whiteHeight / 25,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    top: whiteHeight * 0,
+                    left: 0,
+                    width: constraints.maxWidth / 7 * 1,
+                    height: constraints.maxHeight,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade900,
+                        border: Border(
+                          right: BorderSide(
+                            color: Colors.grey.shade700,
+                            width: constraints.maxWidth / 200,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                 ],
