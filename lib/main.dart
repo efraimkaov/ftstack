@@ -61,7 +61,7 @@ class LayoutBuilderExample extends StatelessWidget {
                     width: constraints.maxWidth / 7 * 6,
                     height: whiteHeight,
                     child: Container(
-                      color: Colors.grey.shade900,
+                      color: Colors.grey.shade700,
                     ),
                   ),
                   Positioned(
@@ -70,7 +70,7 @@ class LayoutBuilderExample extends StatelessWidget {
                     width: constraints.maxWidth / 7 * 6,
                     height: whiteHeight,
                     child: Container(
-                      color: Colors.grey.shade900,
+                      color: Colors.grey.shade700,
                     ),
                   ),
                   Positioned(
@@ -79,7 +79,16 @@ class LayoutBuilderExample extends StatelessWidget {
                     width: constraints.maxWidth / 7 * 6,
                     height: whiteHeight,
                     child: Container(
-                      color: Colors.grey.shade900,
+                      color: Colors.grey.shade700,
+                    ),
+                  ),
+                  Positioned(
+                    top: whiteHeight * 17,
+                    left: constraints.maxWidth / 7,
+                    width: constraints.maxWidth / 7 * 6,
+                    height: whiteHeight,
+                    child: Container(
+                      color: Colors.grey.shade700,
                     ),
                   ),
                   Positioned(
