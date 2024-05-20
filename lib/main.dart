@@ -25,6 +25,7 @@ class LayoutBuilderExample extends StatelessWidget {
           builder: (BuildContext context, BoxConstraints constraints) {
             double whiteHeight = constraints.maxHeight / 18;
             double blackHeight = whiteHeight / 1.25;
+            double brd = constraints.maxWidth / 50;
             if (constraints.maxWidth > constraints.maxHeight) {
               return Center(
                 child: Row(
@@ -53,7 +54,11 @@ class LayoutBuilderExample extends StatelessWidget {
                     height: whiteHeight,
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey.shade100,
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(brd),
+                          bottomRight: Radius.circular(brd),
+                        ),
+                        color: Colors.grey.shade700,
                         border: Border(
                           top: BorderSide(
                             color: Colors.black,
@@ -78,7 +83,11 @@ class LayoutBuilderExample extends StatelessWidget {
                     height: whiteHeight,
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey.shade100,
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(brd),
+                          bottomRight: Radius.circular(brd),
+                        ),
+                        color: Colors.grey.shade700,
                         border: Border(
                           top: BorderSide(
                             color: Colors.black,
@@ -103,7 +112,11 @@ class LayoutBuilderExample extends StatelessWidget {
                     height: whiteHeight,
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey.shade100,
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(brd),
+                          bottomRight: Radius.circular(brd),
+                        ),
+                        color: Colors.grey.shade700,
                         border: Border(
                           top: BorderSide(
                             color: Colors.black,
@@ -128,7 +141,11 @@ class LayoutBuilderExample extends StatelessWidget {
                     height: whiteHeight,
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey.shade100,
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(brd),
+                          bottomRight: Radius.circular(brd),
+                        ),
+                        color: Colors.grey.shade700,
                         border: Border(
                           top: BorderSide(
                             color: Colors.black,
@@ -153,6 +170,10 @@ class LayoutBuilderExample extends StatelessWidget {
                     height: blackHeight,
                     child: Container(
                       decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(brd),
+                          bottomRight: Radius.circular(brd),
+                        ),
                         color: Colors.grey.shade800,
                         border: Border(
                           top: BorderSide(
@@ -178,6 +199,10 @@ class LayoutBuilderExample extends StatelessWidget {
                     height: blackHeight,
                     child: Container(
                       decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(brd),
+                          bottomRight: Radius.circular(brd),
+                        ),
                         color: Colors.grey.shade800,
                         border: Border(
                           top: BorderSide(
@@ -206,7 +231,7 @@ class LayoutBuilderExample extends StatelessWidget {
                         color: Colors.grey.shade900,
                         border: Border(
                           right: BorderSide(
-                            color: Colors.grey.shade700,
+                            color: Colors.grey.shade500,
                             width: constraints.maxWidth / 200,
                           ),
                         ),
